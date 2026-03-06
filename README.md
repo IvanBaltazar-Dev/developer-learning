@@ -13,15 +13,28 @@ This repository includes learning materials and practice in the following areas:
 - Linux systems and command line
 
 ## Repository Structure
-developer-learning
+developer-learning/
 │
-├── algorithms → algorithm exercises and problem solving
-├── backend-java → backend concepts, Java practice, Spring experiments
-├── databases → SQL practice, database concepts and exercises
-├── networking → networking fundamentals and CCNA labs
-├── cybersecurity → cybersecurity notes and practice labs
-├── linux → Linux commands, system practice
-└── learning-log → progress tracking and study log
+├── algorithms/
+│   └── algorithm exercises and problem solving
+│
+├── backend-java/
+│   └── backend concepts, Java practice, Spring experiments
+│
+├── databases/
+│   └── SQL practice, database concepts and exercises
+│
+├── networking/
+│   └── networking fundamentals and CCNA labs
+│
+├── cybersecurity/
+│   └── cybersecurity notes and practice labs
+│
+├── linux/
+│   └── Linux commands and system practice
+│
+└── learning-log/
+    └── progress tracking and study log
 
 ## Learning Method
 For each topic I follow this structure:
