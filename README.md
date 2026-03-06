@@ -13,6 +13,7 @@ This repository includes learning materials and practice in the following areas:
 - Linux systems and command line
 
 ## Repository Structure
+```
 developer-learning/
 │
 ├── algorithms/
@@ -35,6 +36,7 @@ developer-learning/
 │
 └── learning-log/
     └── progress tracking and study log
+```
 
 ## Learning Method
 For each topic I follow this structure:
