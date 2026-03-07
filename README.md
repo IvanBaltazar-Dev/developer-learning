@@ -1,5 +1,5 @@
 # Developer Learning Repository
-This repository documents my continuous learning journey in software engineering and computer science.
+This repository documents my ongoing learning in computer engineering.
 The goal of this project is to build strong technical foundations through structured learning, hands-on practice, and documentation.
 
 ## Areas of Study
