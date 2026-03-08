@@ -27,12 +27,12 @@ void recorrido(int mina[N][M],int &totalGalerias,int modo,int fila, int columna,
     if (modo == 0) { //Buscando lugar para empezar
 
         if (fila < 0) {//CASO BASE, ya no se puede subir mas filas
-            totalGalerias = galeria_actual-1; //No completa la ultima
+            totalGalerias = galeria_actual-1; //No completa la ultima galeria
             return;
         }
-        if (mina[inicio_fila][0] == 0) {//puede iniciar
+        if (mina[inicio_fila][0] == 0) {//puede iniciar una nueva galeria
             mina[inicio_fila][columna] = galeria_actual;
-            // imprimir(mina,0,0);
+            // imprimir(mina,0,0); //OPCIONAL PARA VER COMO ESTA RECORRIENDO
             //Cambio a modo bajar
             recorrido(mina,totalGalerias,1,fila,0,galeria_actual,inicio_fila);
             return;
@@ -106,7 +106,7 @@ void imprimir(int mina[N][M],int fila, int columna) {
     //     cout<<endl;
     // }
   
-    // Con recursión
+    // CON RECURSION
     // Caso base: ya no hay más filas por imprimir
     if (fila == N) {
         cout<<endl;
