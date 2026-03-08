@@ -71,12 +71,13 @@ El robot sigue esta estrategia:
 ---
 
 ## Archivos del proyecto
+'''
 .
 ├── main.cpp
 ├── Funciones.cpp
 ├── Funciones.h
 └── README.md
-
+'''
 ### main.cpp
 Inicializa la mina y ejecuta el algoritmo.
 
