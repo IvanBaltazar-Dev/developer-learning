@@ -88,6 +88,8 @@ Define las constantes y prototipos de funciones.
 ### Funciones.cpp
 Contiene toda la lógica recursiva del algoritmo.
 
+###REFRENCIA DEL EJERCICIO
+**Laboratorio 2025_1 Pregunta 2**
 ---
 
 ## Compilación
