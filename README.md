@@ -32,10 +32,7 @@ developer-learning/
 │   └── cybersecurity notes and practice labs
 │
 ├── linux/
-│   └── Linux commands and system practice
-│
-└── learning-log/
-    └── progress tracking and study log
+    └── Linux commands and system practice
 ```
 
 ## Learning Method
