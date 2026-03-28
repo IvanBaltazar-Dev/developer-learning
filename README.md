@@ -1,68 +1,77 @@
 # Developer Learning Repository
-This repository documents my ongoing learning in computer engineering.
-The goal of this project is to build strong technical foundations through structured learning, hands-on practice, and documentation.
 
-## Areas of Study
-This repository includes learning materials and practice in the following areas:
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=postgresql&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the-badge&logo=linuxmint&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-- Algorithms and problem solving
-- Backend development with Java
-- Databases and SQL
-- Networking (CCNA)
-- Cybersecurity fundamentals
-- Linux systems and command line
+---
 
-## Repository Structure
+## 📌 Overview
+
+This repository documents my personal journey in software development, focusing on building strong foundations in backend engineering, problem solving, and core computer science concepts.
+
+---
+
+## 📂 Project Structure
+
 ```
-developer-learning/
-│
 ├── algorithms/
-│   └── algorithm exercises and problem solving
-│
+│       └── Algorithm exercises and problem solving
+
 ├── backend-java/
-│   └── backend concepts, Java practice, Spring experiments
-│
+│       └── Backend concepts, Java practice, and Spring Boot experiments
+
 ├── databases/
-│   └── SQL practice, database concepts and exercises
-│
-├── networking/
-│   └── networking fundamentals and CCNA labs
-│
-├── cybersecurity/
-│   └── cybersecurity notes and practice labs
-│
-├── linux/
-    └── Linux commands and system practice
+│       └── SQL practice, database design, and exercises
+
+├── operating_systems/
+│       └── Linux Mint based labs, shell scripting, and OS concepts
+
+├── programming_3/
+        └── Time tracking and programming assignments
 ```
+---
 
-## Learning Method
-For each topic I follow this structure:
+## 🚀 Focus Areas
 
-1. Study the concept
-2. Document the theory
-3. Implement practical examples
-4. Solve exercises
-5. Commit the results to this repository
+- Data Structures & Algorithms
+- Backend Development (Java & Spring Boot)
+- Database Design & SQL
+- Operating Systems (Linux Mint, Bash scripting)
+- Software Development Practice
 
-This approach helps reinforce understanding and build a documented record of my technical growth.
+---
 
-## Current Focus
-At the moment my main focus areas are:
+## 🛠 Technologies & Tools
 
-- Algorithms and data structures
-- Backend development with Java
-- Networking fundamentals (CCNA)
+- Java
+- Spring Boot
+- SQL (PostgreSQL / relational databases)
+- Bash scripting
+- Linux Mint
+- Git & GitHub
 
-## Progress Tracking
-Learning progress is tracked in:
-learning-log/2026.md
+---
 
-## Purpose of this Repository
-This repository serves as:
+## 🎯 Purpose
 
-- a personal knowledge base
-- a technical learning journal
-- a portfolio of practical exercises and experiments
+The goal of this repository is to:
 
-## Author
-Ivan Baltazar
+- Strengthen problem-solving skills
+- Build backend development expertise
+- Practice real-world programming concepts
+- Maintain a structured and consistent learning path
+
+---
+
+## 📈 Status
+
+🚧 Actively evolving — new projects, labs, and exercises are continuously added.
+
+---
+
+## 📌 Notes
+
+This repository is part of my continuous learning process and reflects both academic and self-driven projects.
