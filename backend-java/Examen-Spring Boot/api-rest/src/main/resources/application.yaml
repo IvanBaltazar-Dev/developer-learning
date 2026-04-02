@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: api-rest
+  datasource:
+    username: postgres
+    password: admin
+    url: jdbc:postgresql://localhost:5432/clinica_veterinaria
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  cloud:
+    openfeign:
+      client:
+        config:
+          reniec-veterinaria-client:
+            connect-timeout: 5000
+            read-timeout: 5000
+            logger-level: basic
+
+api:
+  token: ${DECOLECTA_API_TOKEN:sk_7214.nLbRrloUrvd7ruNs81vdFFh2TGLq0KFp}
+
+app:
+  reniec:
+    base-url: https://api.decolecta.com
+    # Solo para desarrollo local cuando Decolecta no sea verificable.
+    # El flujo oficial del examen sigue siendo Feign -> Decolecta y por defecto queda desactivado.
+    mock-enabled: false
