@@ -1,11 +1,26 @@
-#include "Funcion.h"
+#include "Funciones.h"
+
+using namespace std;
 
 int main() {
-    int matrix_guerrreros[F_G][C_G]={};
-    Arma arr_armas[A]={};
 
-    cargarDatos("datos.txt",matrix_guerrreros,arr_armas);
+    ifstream arch("datos.txt", ios::in);
+    if (!arch.is_open()) {
+        cout<<"Archivo no existe"<<endl;
+        return 0;
+    }
 
-    solucion(matrix_guerrreros,arr_armas);
+    Guerrero arr_guerreros[MAX_GUERREROS]={};
+    int cantGuerreros = 0;
+
+    Arma arr_armas[MAX_ARMAS]={};
+    int cantArmas = 0;
+
+    cargarDatos(arch, arr_guerreros, cantGuerreros, arr_armas, cantArmas);
+
+    solucion(arr_guerreros, cantGuerreros, arr_armas, cantArmas);
+
+    cout<<"Hola"<<endl;
+
     return 0;
 }

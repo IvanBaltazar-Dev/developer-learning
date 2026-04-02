@@ -4,8 +4,8 @@ project(lab_2024_1)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(lab_2024_1 main.cpp
-        Funcion.h
-        Funcion.cpp
-        Arma.cpp
+        Funciones.cpp
+        Funciones.h
+        Guerrero.h
         Arma.h
 )

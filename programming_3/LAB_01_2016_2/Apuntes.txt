@@ -1,0 +1,4 @@
+Mejorar la subdivisión de clases como miembro interno y miembro externo
+Usar enum para Tipo de dedicación
+Miembro Interno es consultable
+La lista de equipo debe tener solo miembro interno

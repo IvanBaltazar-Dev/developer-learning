@@ -1,5 +1,5 @@
 //
-// Created by Ivan Piero Baltazar on 13/03/2026.
+// Created by Ivan Piero Baltazar on 30/03/2026.
 //
 
 #ifndef LAB_2024_1_ARMA_H
@@ -7,10 +7,10 @@
 
 
 struct Arma {
-    char id_arma;
-    int poder;
-    int tipo;
-    char pre_requisitos[3];
+    char id='\0';
+    int poder=-1;
+    int tipo=-1;
+    char pre_requisito[3]={-1};
 };
 
 
