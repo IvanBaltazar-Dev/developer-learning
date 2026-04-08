@@ -1,282 +1,129 @@
-\# 📘 LAB 01 - Organización con Paquetes en Java
+# 📘 LAB 01 - Organización con Paquetes en Java
 
+## 📌 Descripción
 
-
-\## 📌 Descripción
-
-
-
-Este proyecto corresponde a la reorganización de un sistema de generación de exámenes en Java, aplicando paquetes (packages) para mejorar la estructura del código.
-
-
+Este proyecto corresponde a la reorganización de un sistema de generación de exámenes en Java, aplicando **paquetes (packages)** para mejorar la estructura del código.
 
 El sistema permite:
 
+- Gestionar preguntas
+- Seleccionar preguntas aleatorias
+- Asignar puntajes por examen
+- Registrar profesores
+- Mostrar el examen en consola
 
+---
 
-\- gestionar preguntas
-
-\- seleccionar preguntas aleatorias
-
-\- asignar puntajes por examen
-
-\- registrar profesores
-
-\- mostrar el examen en consola
-
-
-
-\## 🎯 Objetivo del ejercicio
-
-
+## 🎯 Objetivo del ejercicio
 
 Aplicar:
 
+- Organización del código con paquetes
+- Uso de `package` e `import`
+- Compilación estructurada en Java
+- Ejecución de clases dentro de paquetes
+
+---
+
+## 📂 Estructura del proyecto
 
 
-\- organización del código con paquetes
-
-\- uso de package e import
-
-\- compilación estructurada en Java
-
-\- ejecución de clases dentro de paquetes
-
-
-
-\## 📂 Estructura del proyecto
-
-```
-
-LAB\_01\_2026\_1\_packages/
-
+LAB_01_2026_1_packages/
 └── src/
-
 ├── app/
-
 │ └── Main.java
-
 ├── model/
-
 │ ├── Printable.java
-
 │ ├── Question.java
-
 │ ├── SingleChoiceQuestion.java
-
 │ ├── MultipleChoiceQuestion.java
-
 │ ├── Teacher.java
-
 │ ├── QuestionAssessment.java
-
 │ └── Assessment.java
-
 ├── service/
-
 │ └── QuestionManager.java
-
 └── view/
-
 └── AssessmentViewerConsole.java
 
-```
 
-\## 🧠 Organización por capas
+---
 
-
+## 🧠 Organización por capas
 
 | Paquete | Responsabilidad |
-
 |--------|----------------|
+| `model` | Entidades del sistema |
+| `service` | Lógica de negocio |
+| `view` | Visualización |
+| `app` | Punto de entrada |
 
-| model | Entidades del sistema |
+---
 
-| service | Lógica de negocio |
-
-| view | Visualización |
-
-| app | Punto de entrada |
-
-
-
-\## ⚙️ Compilación del proyecto
-
-
+## ⚙️ Compilación del proyecto
 
 Ubícate en la raíz del proyecto:
 
-
-
 ```bash
-
-cd LAB\_01\_2026\_1\_packages
-
-
-
-🔧 Comando de compilación
-
-javac -d out src/model/\*.java src/service/\*.java src/view/\*.java src/app/\*.java
-
-
-
-\##🧠 ¿Qué significa -d out?
-
-\-d = destination (destino)
-
+cd LAB_01_2026_1_packages
+🔧 Compilar
+javac -d out src/model/*.java src/service/*.java src/view/*.java src/app/*.java
+🧠 ¿Qué significa -d out?
+-d = destination (destino)
 Indica dónde guardar los archivos compilados (.class)
-
-
-
-\#🔍 Ejemplo
-
-
+📌 Resultado
 
 Si tienes:
 
 package app;
 
-
-
-Java generará:
+Se genera:
 
 out/app/Main.class
+❌ Sin -d out
+Los .class se mezclan con los .java
+Mala organización
+Problemas al trabajar con paquetes
+✅ Con -d out
+out/
+├── app/
+├── model/
+├── service/
+└── view/
 
+👉 Se respeta automáticamente la estructura de paquetes
 
+▶️ Ejecución del programa
+java -cp out app.Main
+🧠 ¿Qué significa -cp out?
+-cp = classpath
+Indica dónde Java debe buscar las clases compiladas
 
-\#💡 Sin -d out
-
-
-
-Los .class se generan desordenados en la misma carpeta de los .java.
-
-
-
-\#⚠️ Problemas:
-
-
-
-mala organización
-
-errores al ejecutar con paquetes
-
-difícil mantenimiento
-
-
-
-\#✅ Con -d out
-
-```
+👉 En este caso:
 
 out/
 
-├── app/
-
-├── model/
-
-├── service/
-
-└── view/
-
-```
-
-
-
-👉 Se respeta la estructura de paquetes automáticamente
-
-
-
-\#▶️ Ejecución del programa
-
-java -cp out app.Main
-
-\#🧠 ¿Qué significa -cp out?
-
-\-cp = classpath
-
-Indica a Java: “Busca las clases en esta ruta”
-
-\#🔍 En este caso
-
-\-cp out
-
-
-
-Significa:
-
-
-
-👉 Java debe buscar clases dentro de la carpeta out
-
-
-
-\#💡 ¿Por qué es necesario?
-
-
-
-Porque ahí están los .class generados:
-
-
+Contiene:
 
 out/app/Main.class
-
-
-
-\##⚠️ Sin -cp out
-
-
-
-Java no encuentra la clase:
-
-
-
+❌ Sin -cp out
 Error: Could not find or load main class app.Main
+🧠 Resumen
+Parámetro	Función
+-d out	Dónde guardar las clases compiladas
+-cp out	Dónde buscarlas al ejecutar
+🚀 Flujo completo
+# Compilar
+javac -d out src/model/*.java src/service/*.java src/view/*.java src/app/*.java
 
-
-
-\##🧠 Forma simple de entenderlo
-
-Parámetro	Significado
-
-\-d out	dónde guardar clases compiladas
-
-\-cp out	dónde buscarlas para ejecutar
-
-
-
-\##🚀 Flujo completo
-
-
-
-\# Compilar
-
-javac -d out src/model/\*.java src/service/\*.java src/view/\*.java src/app/\*.java
-
-
-
-\# Ejecutar
-
+# Ejecutar
 java -cp out app.Main
-
 💡 Resultado esperado
-
-
 
 El sistema mostrará en consola:
 
+Datos del examen
+Duración
+Fecha
+Preguntas con sus opciones
 
-
-datos del examen
-
-duración
-
-fecha
-
-preguntas con opciones
-
-
-
-(similar al output del enunciado de la práctica)
-
-
-
+(Salida similar al enunciado de la práctica)
