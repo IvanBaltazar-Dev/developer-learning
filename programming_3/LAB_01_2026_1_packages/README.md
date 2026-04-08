@@ -17,7 +17,7 @@ src/
 ## ⚙️ Compilar
 Desde la raíz del proyecto:
 ```
-javac -d out src/model/.java src/service/.java src/view/.java src/app/.java
+javac -d out src/model/*.java src/service/*.java src/view/*.java src/app/*.java
 ```
 
 ### ¿Qué hace `-d out`?
@@ -45,7 +45,7 @@ Indica a Java dónde buscar las clases compiladas.
 
 ## 🔁 Flujo completo
 ```
-javac -d out src/model/.java src/service/.java src/view/.java src/app/.java
+javac -d out src/model/*.java src/service/*.java src/view/*.java src/app/*.java
 java -cp out app.Main
 ```
 
