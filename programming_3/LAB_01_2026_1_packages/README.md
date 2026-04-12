@@ -49,15 +49,15 @@ LAB_01_2026_1_packages/
   ## Ejecutar
   java -cp bin app.Main
 
-📌 Notas importantes
--d bin → define el directorio de salida de los .class (destination)
--cp bin → indica a Java dónde buscar las clases compiladas (Classpath)
-El orden de compilación es importante cuando hay dependencias entre paquetes
+# 📌 Notas importantes
+  -d bin → define el directorio de salida de los .class (destination)
+  -cp bin → indica a Java dónde buscar las clases compiladas (Classpath)
+  El orden de compilación es importante cuando hay dependencias entre paquetes
 
-✅ Recomendación
+# ✅ Recomendación
 Usa la Opción B para entender mejor cómo funcionan las dependencias entre paquetes en Java.
 
-🧠 Conceptos clave
+# 🧠 Conceptos clave
 Packages: organización lógica del código
 Classpath (-cp): rutas donde Java busca clases
 Compilación modular: compilar por capas según dependencias
