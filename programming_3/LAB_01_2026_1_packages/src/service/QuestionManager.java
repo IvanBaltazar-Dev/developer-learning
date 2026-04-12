@@ -1,10 +1,10 @@
 package service;
 
+import model.Question;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
-
-import model.Question;
 
 public class QuestionManager{
 	

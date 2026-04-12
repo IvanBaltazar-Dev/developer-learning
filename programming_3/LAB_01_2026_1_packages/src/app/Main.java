@@ -1,18 +1,18 @@
 package app;
-	
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 import model.Assessment;
-import model.MultipleChoiceQuestion;
-import model.SingleChoiceQuestion;
-import model.Question;
-import model.QuestionAssessment;
 import model.Teacher;
+import model.QuestionAssessment;
+import model.Question;
+import model.SingleChoiceQuestion;
+import model.MultipleChoiceQuestion;
+import model.Printable;
 import service.QuestionManager;
 import view.AssessmentViewerConsole;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public class Main {
 	public static void main(String[] args) {

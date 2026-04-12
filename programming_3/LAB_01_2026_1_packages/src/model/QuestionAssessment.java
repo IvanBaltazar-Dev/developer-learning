@@ -1,5 +1,7 @@
 package model;
 
+import model.Question;
+
 public class QuestionAssessment{
 	private Question question;
 	private int puntaje;
