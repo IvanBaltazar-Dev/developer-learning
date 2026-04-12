@@ -72,10 +72,6 @@ java -cp bin app.Main
 - -cp bin → indica a Java dónde buscar las clases compiladas  
 - El orden de compilación es importante cuando hay dependencias entre paquetes  
 
-# ✅ Recomendación
-
-Usa la Opción B para entender mejor cómo funcionan las dependencias entre paquetes en Java.
-
 # 🧠 Conceptos clave
 
 - Packages: organización lógica del código  
