@@ -23,36 +23,38 @@ LAB_01_2026_1_packages/
 └── bin/   ← se crea al compilar
 ```
 ⚙️ Compilación y ejecución
-🔹 Opción A: Compilar todo de una vez
-# Crear carpeta de salida
-mkdir bin
-
-# Compilar
-javac -d bin src/model/*.java src/service/*.java src/view/*.java src/app/Main.java
+# Opción A: Compilar todo de una vez
+  # Crear carpeta de salida
+  mkdir bin
+  
+  # Compilar
+  javac -d bin src/model/*.java src/service/*.java src/view/*.java src/app/Main.java
+  
+  # Ejecutar
+  java -cp bin app.Main
+# Opción B: Compilar por etapas (recomendado)
+  # Crear carpeta de salida
+  mkdir bin
+  
+  # 1. Compilar model (sin dependencias)
+  javac -d bin src/model/*.java
+  
+  # 2. Compilar service y view (dependen de model)
+  javac -d bin -cp bin src/service/*.java 
+  javac -d bin -cp bin src/view/*.java
+  
+  # 3. Compilar app (depende de todo)
+  javac -d bin -cp bin src/app/Main.java
 
 # Ejecutar
 java -cp bin app.Main
-🔹 Opción B: Compilar por etapas (recomendado)
-# Crear carpeta de salida
-mkdir bin
 
-# 1. Compilar model (sin dependencias)
-javac -d bin src/model/*.java
-
-# 2. Compilar service y view (dependen de model)
-javac -d bin -cp bin src/service/*.java src/view/*.java
-
-# 3. Compilar app (depende de todo)
-javac -d bin -cp bin src/app/Main.java
-
-# Ejecutar
-java -cp bin app.Main
 📌 Notas importantes
--d bin → define el directorio de salida de los .class
--cp bin → indica a Java dónde buscar las clases compiladas
+-d bin → define el directorio de salida de los .class (destination)
+-cp bin → indica a Java dónde buscar las clases compiladas (Classpath)
 El orden de compilación es importante cuando hay dependencias entre paquetes
-✅ Recomendación
 
+✅ Recomendación
 Usa la Opción B para entender mejor cómo funcionan las dependencias entre paquetes en Java.
 
 🧠 Conceptos clave
