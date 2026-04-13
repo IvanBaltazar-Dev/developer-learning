@@ -94,7 +94,8 @@ javac -d bin -cp lib/assessment-lib.jar src/app/Main.java
 ```
 
 ### 🔹 4. EJECUTAR usando el .jar
-📌 El bin se agrega al classpath para que Java encuentre Main.class.
+📌 El bin se agrega al classpath para que Java encuentre Main.class
+
 🪟 Windows
 ```bash
 java -cp "lib/assessment-lib.jar;bin" app.Main
@@ -109,14 +110,13 @@ El -cp (classpath) indica a Java dónde buscar clases:
 ```bash
 lib/assessment-lib.jar
 ```
----
+
 ➡️ Contiene la librería
 ```bash
 bin
 ```
----
-➡️ Contiene Main.class
 
+➡️ Contiene Main.class
 🔥 Diferencias por sistema operativo
 Sistema	Separador	Ejemplo
 Windows	";"	
@@ -127,12 +127,13 @@ Linux / Mac	":"
 ```bash
 lib/a.jar:bin
 ```
+
 ⚠️ Buenas prácticas
 No mezclar Main.class dentro del .jar de la librería
 Mantener separados lib y bin
 Verificar el .jar con jar tf
 Usar comillas en Windows si hay espacios en rutas
----
+
 ---
 ### ▶️ Flujo resumido
 1. Compilar librería
