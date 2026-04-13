@@ -111,27 +111,6 @@ El -cp (classpath) indica a Java dónde buscar clases:
 ```bash
 lib/assessment-lib.jar
 ```
-
-➡️ Contiene la librería
-```bash
-bin
-```
-
-➡️ Contiene Main.class
-
-
-🔥 Diferencias por sistema operativo
-
-Sistema	Separador	Ejemplo
-
-Windows	";"	
-```bash
-"lib/a.jar;bin"
-```
-Linux / Mac	":"	
-```bash
-lib/a.jar:bin
-```
 ---
 ## ⚠️ **Buenas prácticas**
 
