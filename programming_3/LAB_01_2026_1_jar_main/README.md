@@ -5,11 +5,10 @@ Este proyecto implementa una arquitectura modular en Java usando JARs, separando
 ---
 ## 📁 Estructura del Proyecto
 ```bash
-
 LAB_01_2026_1_jar_main/
-├── assessment-lib/
-│   ├── src/
-│   │   ├── model/
+├── assessment-lib/                📚 Librería (código reutilizable)
+│   ├── src/                      🧠 Código fuente
+│   │   ├── model/                
 │   │   │   ├── Assessment.java
 │   │   │   ├── Teacher.java
 │   │   │   ├── Question.java
@@ -17,30 +16,30 @@ LAB_01_2026_1_jar_main/
 │   │   │   ├── SingleChoiceQuestion.java
 │   │   │   ├── MultipleChoiceQuestion.java
 │   │   │   └── Printable.java
-│   │   ├── service/
+│   │   ├── service/              
 │   │   │   └── QuestionManager.java
-│   │   └── view/
+│   │   └── view/                 
 │   │       └── AssessmentViewerConsole.java
 │   │
-│   └── bin/
+│   └── bin/                      📦 Clases compiladas (.class)
 │       ├── model/
 │       ├── service/
 │       └── view/
 │
-└── assessment-app/
-    ├── src/
+└── assessment-app/               🚀 Aplicación principal (ejecutable)
+    ├── src/                      🧠 Código fuente
     │   └── app/
-    │       └── Main.java
+    │       └── Main.java         ▶️ Punto de entrada
     │
-    ├── bin/
+    ├── bin/                      📦 Clases compiladas (.class)
     │   └── app/
     │       └── Main.class
     │
-    ├── lib/
-    │   └── assessment-lib.jar
+    ├── lib/                      📚 Dependencias
+    │   └── assessment-lib.jar    🔗 Librería importada
     │
-    ├── MANIFEST.MF
-    └── assessment-app.jar
+    ├── MANIFEST.MF               📄 Configuración del JAR ejecutable
+    └── assessment-app.jar        📦 JAR ejecutable final
 
 ```
 ---
@@ -52,30 +51,22 @@ LAB_01_2026_1_jar_main/
 Ubícate en:
 
 ```bash
-
 cd LAB\_01\_2026\_1\_jar\_main/assessment-lib
-
 ```
 Ejecuta:
 
 ```bash
-
-\# 1. Crear bin si no existe
-
+# 1. Crear bin si no existe
 mkdir bin
 
-\# 2. Compilar la librería
-
+# 2. Compilar la librería
 javac -d bin src/model/\*.java src/service/\*.java src/view/\*.java
 
-\# 3. Crear el jar de la librería
-
+# 3. Crear el jar de la librería
 jar cvf ../assessment-app/lib/assessment-lib.jar -C bin .
 
-\# 4. Verificar el jar de la librería
-
+# 4. Verificar el jar de la librería
 jar tf ../assessment-app/lib/assessment-lib.jar
-
 ```
 ---
 ### 🔹 2. Compilar la aplicación `assessment-app`
@@ -146,7 +137,7 @@ jar cvfm assessment-app.jar MANIFEST.MF -C bin app
 Luego:
 
 ```bash
-\-C bin app
+-C bin app
 ```
 
 ➡️ Entra a `bin` y empaqueta solo la carpeta `app`
@@ -185,4 +176,3 @@ java -jar assessment-app.jar
 - Usa comillas en `-cp` si estás en Windows
 - Mantén la estructura del proyecto para evitar errores de classpath
 - No olvides la línea en blanco en el `MANIFEST.MF`
-
