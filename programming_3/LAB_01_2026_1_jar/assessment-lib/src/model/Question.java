@@ -1,4 +1,4 @@
-package assessment.model;
+package model;
 
 public abstract class Question implements Printable{
 	private String prompt;

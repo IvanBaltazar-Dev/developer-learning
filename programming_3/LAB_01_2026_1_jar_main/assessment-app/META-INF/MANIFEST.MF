@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: app.Main
+Class-Path: lib/assessment-lib.jar
+Created-By: 17.0.18 (Eclipse Adoptium)
+

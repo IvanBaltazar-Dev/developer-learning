@@ -1,15 +1,17 @@
-package assessment.model;
+package model;
+
+import model.Question;
 
 import java.util.List;
 import java.util.ArrayList;
 
-public class SingleChoiceQuestion extends Question{
-	private int key;
+public class MultipleChoiceQuestion extends Question{
 	private List<String> values = new ArrayList<>();
+	private List<Integer> keys = new ArrayList<>();
 	
-	public SingleChoiceQuestion(int id, String prompt, List<String> values, int key){
+	public MultipleChoiceQuestion(int id, String prompt, List<String> values, List<Integer> keys){
 		super(id,prompt);
-		this.key = key;
+		this.keys = keys;
 		this.values = values;
 	}
 	
@@ -22,7 +24,7 @@ public class SingleChoiceQuestion extends Question{
 			result += number + ". " + s + "\n";
 			number++;
 		}
-		result += "Ingrese su respuesta: ";
+		result += "Seleccione las opciones de su respuesta: ";
 		return result;
 	}
 }

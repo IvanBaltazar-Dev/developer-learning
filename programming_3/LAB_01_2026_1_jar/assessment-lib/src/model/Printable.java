@@ -1,4 +1,4 @@
-package assessment.model;
+package model;
 
 public interface Printable{
 	public String devolverDatos();

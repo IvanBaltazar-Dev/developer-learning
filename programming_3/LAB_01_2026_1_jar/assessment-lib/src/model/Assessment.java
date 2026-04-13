@@ -1,4 +1,8 @@
-package assessment.model;
+package model;
+
+import model.Teacher;
+import model.QuestionAssessment;
+import model.Question;
 
 import java.util.Date;
 import java.util.List;

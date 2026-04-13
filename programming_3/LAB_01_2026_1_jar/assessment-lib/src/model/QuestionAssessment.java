@@ -1,4 +1,6 @@
-package assessment.model;
+package model;
+
+import model.Question;
 
 public class QuestionAssessment{
 	private Question question;

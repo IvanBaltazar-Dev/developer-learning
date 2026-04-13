@@ -1,4 +1,4 @@
-package assessment.model;
+package model;
 
 public class Teacher {
 	private String codPucp;

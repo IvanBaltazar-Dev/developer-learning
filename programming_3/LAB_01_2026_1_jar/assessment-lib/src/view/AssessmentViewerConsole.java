@@ -1,6 +1,6 @@
 package view;
 
-import assessment.model.Assessment;
+import model.Assessment;
 
 public class AssessmentViewerConsole{
 	public AssessmentViewerConsole(){

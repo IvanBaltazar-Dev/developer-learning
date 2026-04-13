@@ -1,10 +1,10 @@
-package assessment.service;
+package service;
+
+import model.Question;
 
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
-
-import assessment.model.Question;
 
 public class QuestionManager{
 	

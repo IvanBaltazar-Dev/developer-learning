@@ -1,4 +1,6 @@
-package assessment.model;
+package model;
+
+import model.Question;
 
 import java.util.List;
 import java.util.ArrayList;
