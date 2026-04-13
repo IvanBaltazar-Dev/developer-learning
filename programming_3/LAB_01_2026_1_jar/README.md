@@ -68,6 +68,7 @@ OPCIÓN 1: empaquetar solo los paquetes necesarios
 jar cvf ../assessment-app/lib/assessment-lib.jar -C bin model -C bin service -C bin view
 ```
 OPCIÓN 2: empaquetar TODO lo que hay en bin
+
 ⚠️ Solo si bin NO contiene Main.class
 ```bash
 jar cvf ../assessment-app/lib/assessment-lib.jar -C bin .
@@ -127,14 +128,14 @@ Linux / Mac	":"
 ```bash
 lib/a.jar:bin
 ```
-
+---
 ## ⚠️ **Buenas prácticas**
 
 - **No mezclar** `Main.class` dentro del `.jar` de la librería  
 - **Mantener separados** `lib` y `bin`  
 - **Verificar** el `.jar` con `jar tf`  
 - **Usar comillas** en Windows si hay espacios en rutas
-
+---
 
 ### ▶️ Flujo resumido
 1. Compilar librería
