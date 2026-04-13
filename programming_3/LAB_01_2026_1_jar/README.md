@@ -118,8 +118,12 @@ bin
 ```
 
 ➡️ Contiene Main.class
+
+
 🔥 Diferencias por sistema operativo
+
 Sistema	Separador	Ejemplo
+
 Windows	";"	
 ```bash
 "lib/a.jar;bin"
