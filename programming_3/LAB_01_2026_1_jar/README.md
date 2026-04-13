@@ -128,13 +128,14 @@ Linux / Mac	":"
 lib/a.jar:bin
 ```
 
-⚠️ Buenas prácticas
-No mezclar Main.class dentro del .jar de la librería
-Mantener separados lib y bin
-Verificar el .jar con jar tf
-Usar comillas en Windows si hay espacios en rutas
+## ⚠️ **Buenas prácticas**
 
----
+- **No mezclar** `Main.class` dentro del `.jar` de la librería  
+- **Mantener separados** `lib` y `bin`  
+- **Verificar** el `.jar` con `jar tf`  
+- **Usar comillas** en Windows si hay espacios en rutas
+
+
 ### ▶️ Flujo resumido
 1. Compilar librería
 ```bash
@@ -148,7 +149,7 @@ jar cvf assessment-lib.jar -C bin .
 ```bash
 javac -cp lib/assessment-lib.jar -d bin src/app/Main.java
 ```
-# 4. Ejecutar
+4. Ejecutar
 ```bash
 java -cp "lib/assessment-lib.jar;bin" app.Main
 ```
