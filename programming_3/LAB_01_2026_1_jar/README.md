@@ -107,6 +107,7 @@ java -cp "lib/assessment-lib.jar:bin" app.Main
 ```
 ---
 🧠 Explicación del Classpath
+
 El -cp (classpath) indica a Java dónde buscar clases:
 ```bash
 lib/assessment-lib.jar
