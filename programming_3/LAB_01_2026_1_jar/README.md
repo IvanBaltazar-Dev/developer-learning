@@ -50,29 +50,29 @@ cd LAB_01_2026_1_jar/assessment-lib
 ```
 ### Ejecuta:
 
-### Crear carpeta bin
+Crear carpeta bin
 ```bash
 mkdir bin
 ```
-### Compilar clases hacia bin
+Compilar clases hacia bin
 ```bash
 javac -d bin src/model/*.java src/service/*.java src/view/*.java
 ```
-### Forma rápida (si tu terminal lo soporta)
+Forma rápida (si tu terminal lo soporta)
 ```bash
 javac -d bin src/**/*.java
 ```
 ### 🔹 2. EMPAQUETAR el .jar
-### OPCIÓN 1: empaquetar solo los paquetes necesarios
+OPCIÓN 1: empaquetar solo los paquetes necesarios
 ```bash
 jar cvf ../assessment-app/lib/assessment-lib.jar -C bin model -C bin service -C bin view
 ```
-### OPCIÓN 2: empaquetar TODO lo que hay en bin
-### ⚠️ Solo si bin NO contiene Main.class
+OPCIÓN 2: empaquetar TODO lo que hay en bin
+⚠️ Solo si bin NO contiene Main.class
 ```bash
 jar cvf ../assessment-app/lib/assessment-lib.jar -C bin .
 ```
-### Verificar contenido del jar
+Verificar contenido del jar
 ```bash
 jar tf ../assessment-app/lib/assessment-lib.jar
 ```
@@ -104,18 +104,18 @@ java -cp "lib/assessment-lib.jar;bin" app.Main
 java -cp "lib/assessment-lib.jar:bin" app.Main
 ```
 ---
-## 🧠 Explicación del Classpath
+🧠 Explicación del Classpath
 El -cp (classpath) indica a Java dónde buscar clases:
 ```bash
 lib/assessment-lib.jar
 ```
 ---
-### ➡️ Contiene la librería
+➡️ Contiene la librería
 ```bash
 bin
 ```
 ---
-### ➡️ Contiene Main.class
+➡️ Contiene Main.class
 
 🔥 Diferencias por sistema operativo
 Sistema	Separador	Ejemplo
@@ -135,15 +135,15 @@ Usar comillas en Windows si hay espacios en rutas
 ---
 ---
 ### ▶️ Flujo resumido
-### 1. Compilar librería
+1. Compilar librería
 ```bash
 javac -d bin src/**/*.java
 ```
-### 2. Crear jar
+2. Crear jar
 ```bash
 jar cvf assessment-lib.jar -C bin .
 ```
-### 3. Compilar app
+3. Compilar app
 ```bash
 javac -cp lib/assessment-lib.jar -d bin src/app/Main.java
 ```
