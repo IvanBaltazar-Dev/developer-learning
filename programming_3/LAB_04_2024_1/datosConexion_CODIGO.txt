@@ -1,0 +1,9 @@
+## Datos de conexión a la base de datos
+
+A continuación, se presentan los parámetros de conexión utilizados para este laboratorio.
+
+### Credenciales de acceso
+- **Hostname:** `prog3-labs-1inf30.********.us-east-1.rds.amazonaws.com`
+- **Username:** admin
+- **Password:** labs1inf3020241
+- **Database:** laboratorio4

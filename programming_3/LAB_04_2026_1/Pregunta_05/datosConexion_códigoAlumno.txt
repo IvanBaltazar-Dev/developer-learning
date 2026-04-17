@@ -1,0 +1,10 @@
+## Configuración de conexión a la base de datos
+**prog3-labs-1inf30**
+
+### Credenciales de acceso
+- **Hostname:** [DIRECCIÓN HOST]
+- **Usuario:** admin
+- **Contraseña:** labs1inf3020261
+- **Base de datos:** assessmentlabs
+
+> Nota: Por motivos de seguridad, el hostname no se publica en este repositorio.

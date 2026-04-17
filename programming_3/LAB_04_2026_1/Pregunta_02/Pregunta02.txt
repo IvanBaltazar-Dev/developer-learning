@@ -1,0 +1,3 @@
+Main-Class: pe.edu.pucp.assessment.program.main.Main
+Class-Path: assessmentQuestionModel.jar assessmentTeacherModel.jar assessmentManagerModel.jar assessmentExamModel.jar
+

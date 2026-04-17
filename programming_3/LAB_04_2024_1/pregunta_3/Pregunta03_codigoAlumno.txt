@@ -1,0 +1,5 @@
+Main-Class: com.medicalsoft.program.main.Principal
+Class-Path: medicalsoftInfraModel.jar medicalsoftPrincipal.jar medicalsoftRRHHModel.jar medicalsoftServModel.jar
+
+
+
