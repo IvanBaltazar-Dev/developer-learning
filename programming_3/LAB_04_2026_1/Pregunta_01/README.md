@@ -1,7 +1,12 @@
 ## Compilación y ejecución del proyecto
 
 Para compilar todos los módulos del proyecto en un solo paso, puedes ejecutar el siguiente comando desde la raíz del proyecto `Pregunta_01`:
-
+⚠️ **VERSIÓN DE JAVA:** Este proyecto ha sido compilado y probado usando Java 25.
+Antes de ejecutar los comandos, verifica tu versión con:
+```bash
+java -version
+javac -version
+```
 ```bash
 javac pe\edu\pucp\assessment\question\model\*.java pe\edu\pucp\assessment\teacher\model\*.java pe\edu\pucp\assessment\manager\model\*.java pe\edu\pucp\assessment\exam\model\*.java pe\edu\pucp\assessment\program\main\*.java
 ```
