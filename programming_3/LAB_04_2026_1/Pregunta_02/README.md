@@ -5,6 +5,14 @@ Primero se generan los JAR de los módulos base y luego los de los módulos que 
 
 ⚠️ **IMPORTANTE:** Todos los comandos deben ejecutarse desde la **raíz del proyecto** (donde se encuentra la carpeta `pe`). De lo contrario, las rutas de paquetes no serán reconocidas correctamente.
 
+⚠️ **VERSIÓN DE JAVA:** Este proyecto ha sido compilado y probado usando **Java 25**
+Antes de ejecutar los comandos, verifica tu versión con:
+```bash
+java -version
+javac -version
+```
+
+Si usas una versión menor, como Java 17, pueden aparecer errores como UnsupportedClassVersionError.
 ### 1. Módulo Question
 Se compilan las clases del paquete `question.model` y luego se empaquetan en un archivo JAR.
 
